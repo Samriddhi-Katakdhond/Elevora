@@ -82,7 +82,13 @@ addSkillBtn.addEventListener("click", function() {
         li.remove();
     });
 
-    li.append(skillText, completeBtn, deleteBtn);
+    let buttonContainer = document.createElement("div");
+
+    buttonContainer.classList.add("skill-buttons");
+
+    buttonContainer.append(completeBtn, deleteBtn);
+
+    li.append(skillText, buttonContainer);
 
     skillList.appendChild(li);
 

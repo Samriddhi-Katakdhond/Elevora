@@ -10,6 +10,7 @@ html {
 
 body {
     padding-top: 80px;
+    font-family: Arial, sans-serif;
 }
 
 section {
@@ -334,13 +335,27 @@ section {
     text-decoration: line-through;
 }
 
+.skill-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.skill-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .delete-skill-btn {
-    background-color: #ed7171;
+    background-color: #dc2626;
     color: white;
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .delete-skill-btn:hover {
