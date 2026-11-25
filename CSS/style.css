@@ -18,6 +18,23 @@ section {
 }
 
 
+:root {
+    --primary: #18181B;
+    --secondary: #7C3AED;
+    --secondary-hover: #6D28D9;
+
+    --background: #FAFAFA;
+    --surface: #FFFFFF;
+
+    --heading: #18181B;
+    --text: #52525B;
+    --muted: #71717A;
+
+    --border: #E4E4E7;
+    --accent-light: #EDE9FE;
+}
+
+
 
 /*Header Section*/
 .header {
@@ -27,7 +44,7 @@ section {
 
     padding: 20px 50px;
 
-    background-color: #172554;
+    background-color: #18181B;
     color: white;
 
     position: fixed;
@@ -58,14 +75,14 @@ section {
 }
 
 .navbar a:hover{
-    color: #38bdf8;
+    color: #A78BFA;
 }
 
 .start-btn{
     padding: 10px 20px;
 
-    background-color: #38bdf8;
-    color: #172554;
+    background-color: #7C3AED;
+    color: white;
 
     border: none;
     border-radius: 6px;
@@ -78,7 +95,7 @@ section {
 }
 
 .start-btn:hover{
-    background-color: white;
+    background-color: #6D28D9;
 }
 
 
@@ -95,7 +112,7 @@ section {
 
     padding: 40px 20px;
 
-    background: linear-gradient(135deg, #eef4ff, #f8fbff);
+    background: linear-gradient(135deg, #FAFAFA, #F3E8FF);
 }
 
 .hero-content{
@@ -105,7 +122,7 @@ section {
 .hero-content h1{
     font-size: 48px;
     font-weight: 700;
-    color: #172554;
+    color: #18181B;
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -117,9 +134,63 @@ section {
     margin-bottom: 30px;
 }
 
+/* Hero Tagline */
 
+.hero-tagline {
+    display: inline-block;
+    color: #7C3AED;
+    background-color: #EDE9FE;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Platform Highlights */
+
+.highlights {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 50px 30px;
+    background-color: #FFFFFF;
+}
+
+.highlight-card {
+    flex: 1;
+    max-width: 300px;
+    min-width: 220px;
+    padding: 25px;
+    text-align: center;
+    background-color: #FAFAFA;
+    border: 1px solid #E4E4E7;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.highlight-card h3 {
+    color: #18181B;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.highlight-card p {
+    color: #52525B;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: #7C3AED;
+}
 
 /*Hero Buttons*/
+
 .hero-buttons{
     display: flex;
     justify-content: center;
@@ -135,23 +206,23 @@ section {
 }
 
 .btn-primary{
-    background-color: #2563eb;
+    background-color: #7C3aED;
     color: white;
     transition: 0.3s;
 }
 
 .btn-secondary{
-    border: 2px solid #2563eb;
-    color: #2563eb;
+    border: 2px solid #7C3AED;
+    color: #7C3AED;
     transition: 0.3s;
 }
 
 .btn-primary:hover{
-    background-color: #172554;
+    background-color: #6D28D9;
 }
 
 .btn-secondary:hover{
-    background-color: #2563eb;
+    background-color: #7C3AED;
     color: white;
 }
 
@@ -161,12 +232,12 @@ section {
 #features{
     padding: 80px 50px;
     text-align: center;
-    background-color: #f8fafc;
+    background-color: #FAFAFA;
 }
 
 #features h2{
     font-size: 32px;
-    color: #172554;
+    color: #18181B;
     margin-bottom: 40px;
 }
 
@@ -174,7 +245,7 @@ section {
     margin-top: 30px;
     font-size: 18px;
     font-weight: bold;
-    color: #2563eb;
+    color: #7C3AED;
     text-align: center;
 
     scroll-margin-top: 120px;
@@ -184,7 +255,7 @@ section {
     margin-top: 15px;
     padding: 10px 20px;
 
-    background-color: #172554;
+    background-color: #18181B;
     color: white;
 
     border: none;
@@ -195,12 +266,12 @@ section {
 }
 
 #reset-btn:hover{
-    background-color: #2563eb;
+    background-color: #7C3AED;
 }
 
 .feature-card.selected {
-    border: 2px solid #2563eb;
-    background-color: #eff6ff;
+    border: 2px solid #7C3AED;
+    background-color: #EDE9FE;
     transform: translateY(-5px);
 }
 
@@ -225,7 +296,7 @@ section {
 }
 
 .feature-card h3{
-    color: #172554;
+    color: #0F172A;
     font-size: 21px;
     margin-bottom: 15px;
 }
@@ -252,7 +323,7 @@ section {
 
 #about h2{
     font-size: 32px;
-    color: #172554;
+    color: #0F172A;
     margin-bottom: 25px;
 }
 
@@ -271,12 +342,13 @@ section {
 .skill-tracker {
     padding: 60px 10%;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .skill-tracker h2 {
     font-size: 32px;
     margin-bottom: 15px;
+    color: #18181B;
 }
 
 .skill-tracker p {
@@ -299,17 +371,23 @@ section {
     outline: none;
 }
 
+#skill-input:focus {
+    border-color: #7C3AED;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
 #add-skill-btn {
     padding: 12px 20px;
     border: none;
-    background-color: #2563eb;
+    background-color: #7C3AED;
     color: white;
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 #add-skill-btn:hover{
-    background-color: #1d4ed8;
+    background-color: #6D28D9;
 }
 
 #skill-list {
@@ -331,8 +409,13 @@ section {
 }
 
 #skill-list li.completed {
-    background-color: #dcfce7;
+    background-color: #EDE9FE;
     text-decoration: line-through;
+}
+
+#skill-list li.completed span {
+    text-decoration: line-through;
+    color: #71717A;
 }
 
 .skill-buttons {
@@ -369,7 +452,7 @@ section {
     padding: 80px 50px;
     text-align: center;
 
-    background: linear-gradient(135deg, #172554, #1e40af);
+    background: linear-gradient(135deg, #18181B, #4C1D95);
 
     color: white;
 }
@@ -382,15 +465,15 @@ section {
 #contact p{
     font-size: 17px;
     line-height: 1.8;
-    color: #dbeafe;
+    color: #E9D5FF;
 }
 
 
 
 /* Footer Section */
 footer{
-    background-color: #0f172a;
-    color: #cbd5e1;
+    background-color: #18181B;
+    color: #D4D4D8;
 
     text-align: center;
 
@@ -458,6 +541,14 @@ footer{
         font-size: 14px;
     }
 
+    .highlights {
+        padding: 40px 20px;
+        gap: 15px;
+    }
+
+    .highlight-card {
+        min-width: 200px;
+    }
 
     /* Features Section */
 
@@ -543,4 +634,26 @@ footer{
         font-size: 26px;
     }
 
+}
+
+
+/* Professional Improvements */
+
+.feature-card {
+    border: 1px solid #E2E8F0;
+}
+
+#skill-input:focus {
+    border-color: #0D9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.12);
+}
+
+#add-skill-btn,
+#reset-btn,
+.start-btn {
+    transition: all 0.3s ease;
+}
+
+#skill-list li {
+    border: 1px solid #E2E8F0;
 }
